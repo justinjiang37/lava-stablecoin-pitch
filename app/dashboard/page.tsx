@@ -204,8 +204,8 @@ export default function DashboardPage() {
           <CardContent className="pt-0">
             <div>
               <p className="text-xs font-medium text-muted-foreground">Monthly Spend</p>
-              <div className="mt-1 h-12">
-                <ResponsiveContainer width="100%" height="100%">
+              <div className="mt-1">
+                <ResponsiveContainer width="100%" height={48} minWidth={0}>
                   <LineChart data={sparklineData}>
                     <Line
                       type="monotone"
@@ -305,8 +305,8 @@ export default function DashboardPage() {
             <CardDescription>March 2026 distribution</CardDescription>
           </CardHeader>
           <CardContent>
-            <div className="h-56">
-              <ResponsiveContainer width="100%" height="100%">
+            <div>
+              <ResponsiveContainer width="100%" height={224} minWidth={0}>
                 <PieChart>
                   <Pie
                     data={spendByCountry}
@@ -350,8 +350,8 @@ export default function DashboardPage() {
             <CardDescription>6-month history</CardDescription>
           </CardHeader>
           <CardContent>
-            <div className="h-56">
-              <ResponsiveContainer width="100%" height="100%">
+            <div>
+              <ResponsiveContainer width="100%" height={224} minWidth={0}>
                 <LineChart data={monthlySpendData}>
                   <CartesianGrid strokeDasharray="3 3" className="stroke-border" />
                   <XAxis
@@ -397,8 +397,8 @@ export default function DashboardPage() {
             <CardDescription>Wire cost vs Remora cost</CardDescription>
           </CardHeader>
           <CardContent>
-            <div className="h-56">
-              <ResponsiveContainer width="100%" height="100%">
+            <div>
+              <ResponsiveContainer width="100%" height={224} minWidth={0}>
                 <BarChart data={feeSavingsData}>
                   <CartesianGrid strokeDasharray="3 3" className="stroke-border" />
                   <XAxis

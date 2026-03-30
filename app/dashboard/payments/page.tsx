@@ -164,8 +164,8 @@ export default function ContractorPaymentsPage() {
           <CardDescription>Monthly payment history (USD)</CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="h-56">
-            <ResponsiveContainer width="100%" height="100%">
+          <div>
+            <ResponsiveContainer width="100%" height={224} minWidth={0}>
               <LineChart data={earningsData}>
                 <CartesianGrid strokeDasharray="3 3" className="stroke-border" />
                 <XAxis dataKey="month" tick={{ fontSize: 11 }} tickLine={false} axisLine={false} />
