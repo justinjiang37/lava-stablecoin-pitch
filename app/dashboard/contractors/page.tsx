@@ -124,7 +124,7 @@ export default function ContractorsPage() {
           <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
             <DialogTrigger
               render={
-                <Button className="bg-indigo-700 text-white hover:bg-indigo-800">
+                <Button className="bg-[#DBFF5B] text-[#0a0a0a] hover:bg-[#c8ec4a]">
                   <UserPlus className="mr-1.5 h-3.5 w-3.5" />
                   Add Contractor
                 </Button>
@@ -257,7 +257,7 @@ export default function ContractorsPage() {
                 <Button variant="outline" onClick={() => setDialogOpen(false)}>
                   Cancel
                 </Button>
-                <Button className="bg-indigo-700 text-white hover:bg-indigo-800" onClick={handleSubmit}>
+                <Button className="bg-[#DBFF5B] text-[#0a0a0a] hover:bg-[#c8ec4a]" onClick={handleSubmit}>
                   Add Contractor
                 </Button>
               </DialogFooter>
@@ -295,7 +295,7 @@ export default function ContractorsPage() {
             variant={view === "card" ? "default" : "ghost"}
             size="icon-sm"
             onClick={() => setView("card")}
-            className={view === "card" ? "bg-indigo-700 text-white" : ""}
+            className={view === "card" ? "bg-[#DBFF5B] text-[#0a0a0a]" : ""}
           >
             <LayoutGrid className="h-3.5 w-3.5" />
           </Button>
@@ -303,7 +303,7 @@ export default function ContractorsPage() {
             variant={view === "table" ? "default" : "ghost"}
             size="icon-sm"
             onClick={() => setView("table")}
-            className={view === "table" ? "bg-indigo-700 text-white" : ""}
+            className={view === "table" ? "bg-[#DBFF5B] text-[#0a0a0a]" : ""}
           >
             <List className="h-3.5 w-3.5" />
           </Button>

@@ -62,7 +62,7 @@ const fadeUp = {
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#4338ca]/5 to-transparent">
+    <section className="relative overflow-hidden bg-gradient-to-b from-[#DBFF5B]/5 to-transparent">
       <div className="mx-auto max-w-7xl px-4 pb-16 pt-12 sm:px-6 sm:pb-24 sm:pt-20 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           {/* Text content */}
@@ -73,7 +73,7 @@ export function Hero() {
               variants={fadeUp}
               custom={0}
             >
-              <span className="inline-block rounded-full bg-[#4338ca]/10 px-4 py-1.5 text-xs font-semibold tracking-wide text-[#4338ca] uppercase">
+              <span className="inline-block rounded-full bg-[#DBFF5B]/10 px-4 py-1.5 text-xs font-semibold tracking-wide text-[#DBFF5B] uppercase">
                 Built for African Payroll
               </span>
             </motion.div>
@@ -110,7 +110,7 @@ export function Hero() {
             >
               <Button
                 size="lg"
-                className="h-12 gap-2 rounded-xl bg-[#f59e0b] px-6 text-base font-bold text-white hover:bg-[#d97706]"
+                className="h-12 gap-2 rounded-xl bg-[#DBFF5B] px-6 text-base font-bold text-[#0a0a0a] hover:bg-[#c8ec4a]"
                 render={<Link href="/dashboard" />}
               >
                 Start Paying Contractors
@@ -118,7 +118,7 @@ export function Hero() {
               </Button>
               <a
                 href="#how-it-works"
-                className="inline-flex items-center gap-1.5 text-sm font-medium text-[#4338ca] transition-colors hover:text-[#4338ca]/80"
+                className="inline-flex items-center gap-1.5 text-sm font-medium text-[#DBFF5B] transition-colors hover:text-[#DBFF5B]/80"
               >
                 See How It Works
                 <ChevronDown className="size-4" />
@@ -133,7 +133,7 @@ export function Hero() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.3, duration: 0.7, ease: "easeOut" }}
           >
-            <div className="overflow-hidden rounded-2xl shadow-2xl shadow-[#4338ca]/10">
+            <div className="overflow-hidden rounded-2xl shadow-2xl shadow-[#DBFF5B]/10">
               <Image
                 src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1200&q=80"
                 alt="African professionals working remotely"
@@ -156,7 +156,7 @@ export function Hero() {
         >
           {stats.map((stat) => (
             <div key={stat.suffix} className="text-center">
-              <p className="text-3xl font-bold text-[#4338ca] sm:text-4xl">
+              <p className="text-3xl font-bold text-[#DBFF5B] sm:text-4xl">
                 <AnimatedCounter
                   end={stat.end}
                   prefix={stat.prefix}

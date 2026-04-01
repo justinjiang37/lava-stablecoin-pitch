@@ -64,7 +64,7 @@ export function Comparison() {
                       key={p}
                       className={
                         p === "remora"
-                          ? "bg-[#4338ca]/5 text-center font-bold text-[#4338ca]"
+                          ? "bg-[#DBFF5B]/5 text-center font-bold text-[#DBFF5B]"
                           : "text-center"
                       }
                     >
@@ -82,7 +82,7 @@ export function Comparison() {
                         key={p}
                         className={
                           p === "remora"
-                            ? "bg-[#4338ca]/5 text-center font-semibold text-[#4338ca]"
+                            ? "bg-[#DBFF5B]/5 text-center font-semibold text-[#DBFF5B]"
                             : "text-center"
                         }
                       >

@@ -35,7 +35,7 @@ export function Calculator() {
     }).format(n);
 
   return (
-    <section id="calculator" className="bg-gradient-to-b from-transparent to-[#4338ca]/5 py-20">
+    <section id="calculator" className="bg-gradient-to-b from-transparent to-[#DBFF5B]/5 py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
@@ -51,7 +51,7 @@ export function Calculator() {
           <Card className="border-0 shadow-lg">
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-lg">
-                <CalcIcon className="size-5 text-[#4338ca]" />
+                <CalcIcon className="size-5 text-[#DBFF5B]" />
                 Your Team
               </CardTitle>
               <CardDescription>
@@ -64,7 +64,7 @@ export function Calculator() {
                   <label className="text-sm font-medium text-foreground">
                     Number of contractors
                   </label>
-                  <span className="text-sm font-semibold text-[#4338ca]">
+                  <span className="text-sm font-semibold text-[#DBFF5B]">
                     {contractors}
                   </span>
                 </div>
@@ -74,7 +74,7 @@ export function Calculator() {
                   max={200}
                   value={contractors}
                   onChange={(e) => setContractors(Number(e.target.value))}
-                  className="mt-2 w-full accent-[#4338ca]"
+                  className="mt-2 w-full accent-[#DBFF5B]"
                 />
                 <div className="mt-1 flex justify-between text-xs text-muted-foreground">
                   <span>1</span>
@@ -87,7 +87,7 @@ export function Calculator() {
                   <label className="text-sm font-medium text-foreground">
                     Avg. monthly payment (USD)
                   </label>
-                  <span className="text-sm font-semibold text-[#4338ca]">
+                  <span className="text-sm font-semibold text-[#DBFF5B]">
                     {fmt(avgPayment)}
                   </span>
                 </div>
@@ -98,7 +98,7 @@ export function Calculator() {
                   step={100}
                   value={avgPayment}
                   onChange={(e) => setAvgPayment(Number(e.target.value))}
-                  className="mt-2 w-full accent-[#4338ca]"
+                  className="mt-2 w-full accent-[#DBFF5B]"
                 />
                 <div className="mt-1 flex justify-between text-xs text-muted-foreground">
                   <span>$100</span>

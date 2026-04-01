@@ -121,7 +121,7 @@ export default function SettingsPage() {
                 </div>
               </div>
               <div className="flex justify-end">
-                <Button className="bg-indigo-700 text-white hover:bg-indigo-800">
+                <Button className="bg-[#DBFF5B] text-[#0a0a0a] hover:bg-[#c8ec4a]">
                   Save Changes
                 </Button>
               </div>
@@ -169,7 +169,7 @@ export default function SettingsPage() {
                   <CardTitle>Team Members</CardTitle>
                   <CardDescription>Manage who has access to your account</CardDescription>
                 </div>
-                <Button className="bg-indigo-700 text-white hover:bg-indigo-800">
+                <Button className="bg-[#DBFF5B] text-[#0a0a0a] hover:bg-[#c8ec4a]">
                   <UserPlus className="mr-1.5 h-3.5 w-3.5" />
                   Invite
                 </Button>
@@ -183,7 +183,7 @@ export default function SettingsPage() {
                     className="flex items-center gap-3 rounded-lg border p-3"
                   >
                     <Avatar className="h-9 w-9">
-                      <AvatarFallback className="bg-indigo-700/10 text-indigo-700 text-xs dark:text-indigo-400">
+                      <AvatarFallback className="bg-[#DBFF5B]/10 text-[#DBFF5B] text-xs dark:text-[#DBFF5B]">
                         {member.initials}
                       </AvatarFallback>
                     </Avatar>
@@ -245,7 +245,7 @@ export default function SettingsPage() {
                   <CardTitle>API Keys</CardTitle>
                   <CardDescription>Manage programmatic access to Remora</CardDescription>
                 </div>
-                <Button className="bg-indigo-700 text-white hover:bg-indigo-800">
+                <Button className="bg-[#DBFF5B] text-[#0a0a0a] hover:bg-[#c8ec4a]">
                   <RefreshCw className="mr-1.5 h-3.5 w-3.5" />
                   Generate Key
                 </Button>

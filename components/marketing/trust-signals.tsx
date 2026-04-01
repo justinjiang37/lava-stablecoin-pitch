@@ -42,8 +42,8 @@ export function TrustSignals() {
               key={signal.label}
               className="flex flex-col items-center text-center"
             >
-              <div className="flex size-12 items-center justify-center rounded-full bg-[#4338ca]/10">
-                <signal.icon className="size-6 text-[#4338ca]" />
+              <div className="flex size-12 items-center justify-center rounded-full bg-[#DBFF5B]/10">
+                <signal.icon className="size-6 text-[#DBFF5B]" />
               </div>
               <p className="mt-3 text-sm font-semibold text-foreground">
                 {signal.label}

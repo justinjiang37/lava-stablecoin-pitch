@@ -68,7 +68,7 @@ export function Testimonials() {
                     {Array.from({ length: 5 }).map((_, idx) => (
                       <Star
                         key={idx}
-                        className="size-4 fill-[#f59e0b] text-[#f59e0b]"
+                        className="size-4 fill-[#DBFF5B] text-[#DBFF5B]"
                       />
                     ))}
                   </div>

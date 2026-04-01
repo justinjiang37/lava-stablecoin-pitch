@@ -27,7 +27,7 @@ export function Pricing() {
           <p className="mx-auto mt-3 max-w-2xl text-lg text-muted-foreground">
             No hidden FX markups. No surprise fees. Just straightforward pricing.
           </p>
-          <div className="mt-4 inline-block rounded-full bg-[#f59e0b]/10 px-5 py-2 text-sm font-semibold text-[#f59e0b]">
+          <div className="mt-4 inline-block rounded-full bg-[#DBFF5B]/10 px-5 py-2 text-sm font-semibold text-[#DBFF5B]">
             Compare to the hidden 5-8% you&apos;re paying now
           </div>
         </div>
@@ -45,12 +45,12 @@ export function Pricing() {
               <Card
                 className={`relative h-full border-0 shadow-md ${
                   tier.highlighted
-                    ? "ring-2 ring-[#4338ca] shadow-lg"
+                    ? "ring-2 ring-[#DBFF5B] shadow-lg"
                     : ""
                 }`}
               >
                 {tier.highlighted && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-[#4338ca] px-4 py-1 text-xs font-bold text-white">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-[#DBFF5B] px-4 py-1 text-xs font-bold text-[#0a0a0a]">
                     Most Popular
                   </div>
                 )}
@@ -90,7 +90,7 @@ export function Pricing() {
                   <Button
                     className={
                       tier.highlighted
-                        ? "h-10 w-full bg-[#f59e0b] text-white font-bold hover:bg-[#d97706]"
+                        ? "h-10 w-full bg-[#DBFF5B] text-[#0a0a0a] font-bold hover:bg-[#c8ec4a]"
                         : "h-10 w-full"
                     }
                     variant={tier.highlighted ? "default" : "outline"}

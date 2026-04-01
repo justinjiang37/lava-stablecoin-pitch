@@ -63,10 +63,10 @@ export function HowItWorks() {
               <Card className="group relative h-full border-0 shadow-md transition-shadow hover:shadow-lg">
                 <CardContent className="pt-8 pb-6">
                   <div className="mb-4 flex items-center gap-4">
-                    <div className="flex size-12 items-center justify-center rounded-xl bg-[#4338ca]/10">
-                      <step.icon className="size-6 text-[#4338ca]" />
+                    <div className="flex size-12 items-center justify-center rounded-xl bg-[#DBFF5B]/10">
+                      <step.icon className="size-6 text-[#DBFF5B]" />
                     </div>
-                    <span className="text-3xl font-extrabold text-[#4338ca]/15">
+                    <span className="text-3xl font-extrabold text-[#DBFF5B]/15">
                       {step.step}
                     </span>
                   </div>

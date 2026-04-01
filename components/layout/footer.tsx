@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Anchor } from "lucide-react";
+import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
 import { COUNTRIES } from "@/lib/constants";
 
@@ -52,10 +52,13 @@ export function Footer() {
           {/* Brand column */}
           <div className="col-span-2 sm:col-span-3 lg:col-span-1">
             <Link href="/" className="flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-indigo-700 text-white">
-                <Anchor className="h-4 w-4" />
-              </div>
-              <span className="text-lg font-bold tracking-tight text-foreground">
+              <Image
+                src="/remora-logo-white.png"
+                alt="Remora"
+                width={32}
+                height={32}
+              />
+              <span className="text-lg tracking-tight font-[var(--font-geist)] font-light text-foreground">
                 Remora
               </span>
             </Link>

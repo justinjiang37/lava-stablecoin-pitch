@@ -104,8 +104,8 @@ export default function ContractorPaymentsPage() {
                 <p className="text-2xl font-bold">{formatUsd(totalReceived)}</p>
                 <p className="text-xs text-muted-foreground">{myPayments.length} payments</p>
               </div>
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-700/10">
-                <DollarSign className="h-5 w-5 text-indigo-400" />
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#DBFF5B]/10">
+                <DollarSign className="h-5 w-5 text-[#DBFF5B]" />
               </div>
             </div>
           </CardContent>
@@ -119,8 +119,8 @@ export default function ContractorPaymentsPage() {
                 <p className="text-2xl font-bold">KSh {totalLocal.toLocaleString()}</p>
                 <p className="text-xs text-muted-foreground">KES total</p>
               </div>
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-700/10">
-                <TrendingUp className="h-5 w-5 text-indigo-400" />
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#DBFF5B]/10">
+                <TrendingUp className="h-5 w-5 text-[#DBFF5B]" />
               </div>
             </div>
           </CardContent>
@@ -188,7 +188,7 @@ export default function ContractorPaymentsPage() {
                 <Line
                   type="monotone"
                   dataKey="amount"
-                  stroke="#4338ca"
+                  stroke="#DBFF5B"
                   strokeWidth={2}
                   dot={{ r: 3 }}
                   name="Earnings"

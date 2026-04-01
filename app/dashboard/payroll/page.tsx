@@ -119,7 +119,7 @@ export default function PayrollPage() {
                   className={cn(
                     "flex h-8 w-8 items-center justify-center rounded-full text-sm font-bold transition-colors",
                     step >= s
-                      ? "bg-indigo-700 text-white"
+                      ? "bg-[#DBFF5B] text-[#0a0a0a]"
                       : "bg-muted text-muted-foreground"
                   )}
                 >
@@ -180,7 +180,7 @@ export default function PayrollPage() {
                             className={cn(
                               "flex items-center gap-3 rounded-lg border p-3 transition-colors cursor-pointer",
                               selected.has(c.id)
-                                ? "border-indigo-700/30 bg-indigo-700/5"
+                                ? "border-[#DBFF5B]/30 bg-[#DBFF5B]/5"
                                 : "border-border hover:bg-muted/50"
                             )}
                             onClick={() => toggleContractor(c.id)}
@@ -209,7 +209,7 @@ export default function PayrollPage() {
                     <p className="text-2xl font-bold">{formatUsd(runningTotal)}</p>
                   </div>
                   <Button
-                    className="bg-indigo-700 text-white hover:bg-indigo-800"
+                    className="bg-[#DBFF5B] text-[#0a0a0a] hover:bg-[#c8ec4a]"
                     disabled={selected.size === 0}
                     onClick={() => setStep(2)}
                   >
@@ -326,7 +326,7 @@ export default function PayrollPage() {
           {step === 2 && processing && (
             <Card className="mt-4">
               <CardContent className="flex flex-col items-center justify-center py-12">
-                <Loader2 className="h-12 w-12 animate-spin text-indigo-700" />
+                <Loader2 className="h-12 w-12 animate-spin text-[#DBFF5B]" />
                 <p className="mt-4 text-lg font-semibold">Processing Payroll...</p>
                 <p className="text-sm text-muted-foreground">
                   Sending payments to {selected.size} contractors
@@ -334,7 +334,7 @@ export default function PayrollPage() {
                 <div className="mt-6 w-full max-w-xs">
                   <div className="h-2 w-full overflow-hidden rounded-full bg-muted">
                     <motion.div
-                      className="h-full bg-indigo-700 rounded-full"
+                      className="h-full bg-[#DBFF5B] rounded-full"
                       initial={{ width: "0%" }}
                       animate={{ width: "100%" }}
                       transition={{ duration: 2.3, ease: "easeInOut" }}
@@ -380,7 +380,7 @@ export default function PayrollPage() {
                     ))}
                   </div>
                   <Button
-                    className="mt-6 bg-indigo-700 text-white hover:bg-indigo-800"
+                    className="mt-6 bg-[#DBFF5B] text-[#0a0a0a] hover:bg-[#c8ec4a]"
                     onClick={() => {
                       setStep(1);
                       setSelected(new Set());

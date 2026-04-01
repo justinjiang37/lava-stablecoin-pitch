@@ -63,14 +63,14 @@ export function DashboardLayout({ children }: { children: ReactNode }) {
                     className={cn(
                       "relative flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition-colors",
                       isActive
-                        ? "text-indigo-400"
+                        ? "text-[#DBFF5B]"
                         : "text-muted-foreground hover:text-foreground hover:bg-muted"
                     )}
                   >
                     {isActive && (
                       <motion.div
                         layoutId="sidebar-active"
-                        className="absolute inset-0 rounded-lg bg-indigo-400/10"
+                        className="absolute inset-0 rounded-lg bg-[#DBFF5B]/10"
                         transition={{
                           type: "spring",
                           stiffness: 350,

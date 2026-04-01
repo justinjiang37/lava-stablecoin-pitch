@@ -117,8 +117,8 @@ export default function ContractorPage() {
                   <p className="text-2xl font-bold">{formatUsd(totalEarnedAllTime)}</p>
                   <p className="text-xs text-muted-foreground">all time</p>
                 </div>
-                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-700/10">
-                  <DollarSign className="h-5 w-5 text-indigo-400" />
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#DBFF5B]/10">
+                  <DollarSign className="h-5 w-5 text-[#DBFF5B]" />
                 </div>
               </div>
             </CardContent>
@@ -147,8 +147,8 @@ export default function ContractorPage() {
                   <p className="text-2xl font-bold">{formatUsd(earnedThisYear)}</p>
                   <p className="text-xs text-muted-foreground">2026</p>
                 </div>
-                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-700/10">
-                  <Calendar className="h-5 w-5 text-indigo-400" />
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#DBFF5B]/10">
+                  <Calendar className="h-5 w-5 text-[#DBFF5B]" />
                 </div>
               </div>
             </CardContent>
@@ -359,7 +359,7 @@ export default function ContractorPage() {
                       Cancel
                     </Button>
                     <Button
-                      className="bg-indigo-700 text-white hover:bg-indigo-800"
+                      className="bg-[#DBFF5B] text-[#0a0a0a] hover:bg-[#c8ec4a]"
                       onClick={() => setEditOpen(false)}
                     >
                       Save Changes
