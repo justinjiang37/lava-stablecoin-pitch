@@ -3,8 +3,8 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import {
-  Anchor,
   LayoutDashboard,
   Users,
   Banknote,
@@ -59,12 +59,16 @@ export function Navbar({ variant = "dashboard" }: NavbarProps) {
       <div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-4 sm:px-6">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-indigo-700 text-white transition-transform group-hover:scale-105">
-            <Anchor className="h-4 w-4" />
-          </div>
+          <Image
+            src="/remora-logo-white.png"
+            alt="Remora"
+            width={32}
+            height={32}
+            className="transition-transform group-hover:scale-105"
+          />
           <span
             className={cn(
-              "text-lg font-bold tracking-tight",
+              "text-lg tracking-tight font-[var(--font-geist)] font-light",
               isMarketing ? "text-white" : "text-foreground"
             )}
           >
@@ -87,7 +91,7 @@ export function Navbar({ variant = "dashboard" }: NavbarProps) {
                   className={cn(
                     "relative flex items-center gap-1.5 rounded-md px-3 py-1.5 text-sm font-medium transition-colors",
                     isActive
-                      ? "text-indigo-400"
+                      ? "text-[#DBFF5B]"
                       : "text-muted-foreground hover:text-foreground"
                   )}
                 >
@@ -96,7 +100,7 @@ export function Navbar({ variant = "dashboard" }: NavbarProps) {
                   {isActive && (
                     <motion.div
                       layoutId="navbar-active"
-                      className="absolute inset-0 rounded-md bg-indigo-400/10"
+                      className="absolute inset-0 rounded-md bg-[#DBFF5B]/10"
                       transition={{
                         type: "spring",
                         stiffness: 380,
@@ -208,7 +212,7 @@ export function Navbar({ variant = "dashboard" }: NavbarProps) {
                           className={cn(
                             "flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium transition-colors",
                             isActive
-                              ? "bg-indigo-400/10 text-indigo-400"
+                              ? "bg-[#DBFF5B]/10 text-[#DBFF5B]"
                               : "text-muted-foreground hover:bg-muted hover:text-foreground"
                           )}
                         >

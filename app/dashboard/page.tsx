@@ -53,7 +53,7 @@ const statusColor: Record<PaymentStatus, string> = {
   Failed: "bg-red-500/10 text-red-400",
 };
 
-const PIE_COLORS = ["#4338ca", "#f59e0b", "#22c55e", "#3b82f6", "#ef4444", "#8b5cf6", "#06b6d4"];
+const PIE_COLORS = ["#DBFF5B", "#f59e0b", "#22c55e", "#3b82f6", "#ef4444", "#8b5cf6", "#06b6d4"];
 
 export default function DashboardPage() {
   const [loading, setLoading] = useState(true);
@@ -148,8 +148,8 @@ export default function DashboardPage() {
                 <p className="text-2xl font-bold">{activeContractors.length}</p>
                 <p className="text-xs text-muted-foreground">active</p>
               </div>
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-700/10">
-                <Users className="h-5 w-5 text-indigo-400" />
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#DBFF5B]/10">
+                <Users className="h-5 w-5 text-[#DBFF5B]" />
               </div>
             </div>
           </CardContent>
@@ -163,8 +163,8 @@ export default function DashboardPage() {
                 <p className="text-2xl font-bold">Apr 15</p>
                 <p className="text-xs text-muted-foreground">{formatUsd(totalPaidThisMonth)}</p>
               </div>
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-700/10">
-                <Calendar className="h-5 w-5 text-indigo-400" />
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#DBFF5B]/10">
+                <Calendar className="h-5 w-5 text-[#DBFF5B]" />
               </div>
             </div>
           </CardContent>
@@ -178,8 +178,8 @@ export default function DashboardPage() {
                 <p className="text-2xl font-bold">{formatUsd(totalPaidThisMonth)}</p>
                 <p className="text-xs text-muted-foreground">{marchPayments.length} payments</p>
               </div>
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-700/10">
-                <DollarSign className="h-5 w-5 text-indigo-400" />
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#DBFF5B]/10">
+                <DollarSign className="h-5 w-5 text-[#DBFF5B]" />
               </div>
             </div>
           </CardContent>
@@ -210,7 +210,7 @@ export default function DashboardPage() {
                     <Line
                       type="monotone"
                       dataKey="v"
-                      stroke="#4338ca"
+                      stroke="#DBFF5B"
                       strokeWidth={2}
                       dot={false}
                     />
@@ -263,7 +263,7 @@ export default function DashboardPage() {
                     <TableCell>
                       <Link
                         href={`/dashboard/transactions/${p.id}`}
-                        className="font-medium text-indigo-400 hover:underline"
+                        className="font-medium text-[#DBFF5B] hover:underline"
                       >
                         {p.contractorName}
                       </Link>
@@ -379,7 +379,7 @@ export default function DashboardPage() {
                   <Line
                     type="monotone"
                     dataKey="amount"
-                    stroke="#4338ca"
+                    stroke="#DBFF5B"
                     strokeWidth={2}
                     dot={{ r: 3 }}
                     name="Total Spend"

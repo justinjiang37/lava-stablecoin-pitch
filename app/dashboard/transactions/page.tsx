@@ -203,7 +203,7 @@ export default function TransactionsPage() {
                     <TableCell>
                       <Link
                         href={`/dashboard/transactions/${p.id}`}
-                        className="font-medium text-indigo-400 hover:underline"
+                        className="font-medium text-[#DBFF5B] hover:underline"
                       >
                         {p.contractorName}
                       </Link>
