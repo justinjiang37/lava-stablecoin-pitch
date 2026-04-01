@@ -76,44 +76,6 @@ export function Navbar({ variant = "dashboard" }: NavbarProps) {
           </span>
         </Link>
 
-        {/* Desktop nav links (dashboard only) */}
-        {!isMarketing && (
-          <nav className="hidden md:flex items-center gap-1">
-            {links.map((link) => {
-              const isActive =
-                pathname === link.href ||
-                (link.href !== "/dashboard" &&
-                  pathname.startsWith(link.href));
-              return (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className={cn(
-                    "relative flex items-center gap-1.5 rounded-md px-3 py-1.5 text-sm font-medium transition-colors",
-                    isActive
-                      ? "text-[#DBFF5B]"
-                      : "text-muted-foreground hover:text-foreground"
-                  )}
-                >
-                  <link.icon className="h-4 w-4" />
-                  {link.label}
-                  {isActive && (
-                    <motion.div
-                      layoutId="navbar-active"
-                      className="absolute inset-0 rounded-md bg-[#DBFF5B]/10"
-                      transition={{
-                        type: "spring",
-                        stiffness: 380,
-                        damping: 30,
-                      }}
-                    />
-                  )}
-                </Link>
-              );
-            })}
-          </nav>
-        )}
-
         {/* Right side controls */}
         <div className="flex items-center gap-2">
           {/* Role toggle */}
